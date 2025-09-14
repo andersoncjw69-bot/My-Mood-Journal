@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Journal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mood Journal</h1>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+    </header>
+    <main>
+        <section aria-label="Mood Selection">
+            <h2>Select Your Mood</h2>
+            <div id="mood-buttons">
+                <button class="mood" data-mood="happy">😊</button>
+                <button class="mood" data-mood="sad">😢</button>
+                <button class="mood" data-mood="angry">😠</button>
+                <button class="mood" data-mood="excited">🤩</button>
+                <button class="mood" data-mood="calm">😌</button>
+            </div>
+        </section>
+        <section aria-label="Journal Entry">
+            <h2>Write Your Thoughts</h2>
+            <textarea id="note" rows="4" placeholder="Type your notes here..."></textarea>
+            <button id="save">Save Entry</button>
+        </section>
+        <section aria-label="Past Entries">
+            <h2>Past Entries</h2>
+            <ul id="entries"></ul>
+        </section>
+        <aside aria-label="Motivational Quote">
+            <h2>Motivational Quote</h2>
+            <blockquote id="quote"></blockquote>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mood Journal</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
